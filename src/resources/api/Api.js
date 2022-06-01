@@ -1,5 +1,7 @@
-import AsyncStorage from '@react-native-async-storage/async-storage'
+//import AsyncStorage from '@react-native-async-storage/async-storage'
+
 const BASE_API = "http://localhost:4000/api"
+
 export default {
     checkToken: async (token) => {
         const req = await fetch(`${BASE_API}/usuarios/token`, {
@@ -40,7 +42,7 @@ export default {
         })
         const json = await req.json()
         return json
-    },
+    },/*
     getProfissionais: async () => {
         let token = await AsyncStorage.getItem('token')
         const req = await fetch(`${BASE_API}/profissionais`, {
@@ -81,5 +83,5 @@ export default {
         })
         const json = await req.json()
         return json
-    }
+    }*/
 }
