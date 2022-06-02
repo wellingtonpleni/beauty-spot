@@ -1,6 +1,6 @@
 //import AsyncStorage from '@react-native-async-storage/async-storage'
 
-const BASE_API = process.env.URI
+const BASE_API = "https://beautyspotbr.herokuapp.com/api"
 
 export default {
     checkToken: async (token) => {
