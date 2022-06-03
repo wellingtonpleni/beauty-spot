@@ -6,6 +6,7 @@ import SignIn from '../screens/SignIn'
 import SignUp from '../screens/SignUp'
 import Profissionais from '../screens/Profissionais'
 import Tabs from '../stacks/Tabs'
+import Profissional from '../screens/Profissional'
 
 const Stack = createStackNavigator()
 
@@ -20,6 +21,7 @@ export default () => (
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Profissionais" component={Profissionais} />
+        <Stack.Screen name="Profissional" component={Profissional} />
         <Stack.Screen name="Tabs" component={Tabs} />
     </Stack.Navigator>
 )

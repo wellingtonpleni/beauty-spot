@@ -1,4 +1,4 @@
-//import AsyncStorage from '@react-native-async-storage/async-storage'
+import AsyncStorage from '@react-native-community/async-storage'
 
 const BASE_API = "https://beautyspotbr.herokuapp.com/api"
 
@@ -42,20 +42,21 @@ export default {
         })
         const json = await req.json()
         return json
-    },/*
+    },
     getProfissionais: async () => {
         let token = await AsyncStorage.getItem('token')
-        const req = await fetch(`${BASE_API}/profissionais`, {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                'x-access-token': token
-            }
-        })
-        const json = await req.json()
-        return json
+    const req = await fetch(`${BASE_API}/profissionais`,{
+        method: 'GET',
+        headers: {
+            Accept : 'application/json',
+            'Content-Type': 'application/json',
+            'x-access-token': token
+        }        
+    })
+    const json = await req.json()
+    return json  
     },
+
     incluiProfissional: async (dadosProfissional) => {
         let token = await AsyncStorage.getItem('token')
         const req = await fetch(`${BASE_API}/profissionais`, {
@@ -70,6 +71,7 @@ export default {
         const json = await req.json()
         return json
     },
+
     alteraProfissional: async (dadosProfissional) => {
         let token = await AsyncStorage.getItem('token')
         const req = await fetch(`${BASE_API}/profissionais`, {
@@ -83,5 +85,5 @@ export default {
         })
         const json = await req.json()
         return json
-    }*/
+    }
 }

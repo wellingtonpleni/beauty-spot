@@ -3,12 +3,14 @@ import styled from 'styled-components/native'
 export const Container = styled.SafeAreaView`
     background-color: #671BF2;
     flex: 1;
+    align-items: center;
 `
 //${props => props.theme.color}
 export const Title = styled.Text`
     color: #fff;
     font-size: 24px;
-    font-weight: bold; 
+    font-weight: bold;
+    padding-top: 10px;
 `
 
 export const Scroller = styled.ScrollView`
