@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Alert, Platform } from 'react-native'
-import AsyncStorage from '@react-native-community/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useNavigation, CommonActions } from '@react-navigation/native'
 
 import Api from '../../resources/api/Api'
@@ -8,8 +8,6 @@ import Api from '../../resources/api/Api'
 import {
     Container,
     InputArea,
-    CustomButton,
-    CustomButtonText,
     SignMessageButton,
     SignMessageButtonText,
     SignMessageButtonTextBold
